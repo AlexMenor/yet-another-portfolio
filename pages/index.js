@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Landing from "../sections/landing";
 import Story from "../sections/story";
+import Stack from "../sections/stack";
+import Social from "../components/Social";
 
 export default function Home() {
   return (
@@ -22,7 +24,11 @@ export default function Home() {
 
       <Landing></Landing>
       <Story></Story>
-      <footer className="flex items-center justify-center w-full h-24 border-t"></footer>
+      <Stack></Stack>
+      <footer className="flex items-center justify-center w-full bg-black h-20">
+        <p className="mr-5 text-white">You can find me on:</p>
+        <Social showOnMobile={true}></Social>
+      </footer>
     </div>
   );
 }

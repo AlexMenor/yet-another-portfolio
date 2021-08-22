@@ -2,9 +2,9 @@ import gh from "../public/assets/github.svg";
 import ln from "../public/assets/linkedin.svg";
 import tw from "../public/assets/twitter.svg";
 
-export default function Social() {
+export default function Social({ showOnMobile = false }) {
   return (
-    <div className="space-x-5 hidden lg:flex">
+    <div className={`space-x-5 ${showOnMobile ? "flex" : "hidden lg:flex"}`}>
       <a
         href="https://github.com/AlexMenor"
         target="_blank"

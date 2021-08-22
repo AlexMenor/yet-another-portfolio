@@ -26,7 +26,7 @@ export default function Landing() {
           <Social />
         </header>
 
-        <div className="flex flex-wrap-reverse flex-row items-center md:pt-20 lg:pt-40 md:pb-20 justify-center md:px-20">
+        <div className="flex flex-wrap-reverse flex-row items-center md:pt-20 lg:pt-40 2xl:pt-72 md:pb-20 justify-center md:px-20">
           <h1
             className="font-display text-4xl md:text-6xl leading-relaxed md:leading-relaxed mt-5 md:mt-0 xl:mr-20 underline"
             style={{
@@ -41,17 +41,21 @@ export default function Landing() {
         </div>
       </div>
       <div className="flex flex-col items-center pb-10 md:pb-14 mt-10 relative">
-        <h2 className="font-display text-xl md:text-2xl text-black">
-          Go to my <span className="text-primary">skills & stack</span>{" "}
-          <Arrow className="fill-current text-primary" size="20"></Arrow>
-        </h2>
-        <h3 className="font-display text-lg md:text-xl text-black mt-4 md:mt-10 animate-bounce">
-          Or go through my <span className="text-accent">story</span>
-          <ArrowDown
-            className="fill-current text-accent ml-2"
-            size="15"
-          ></ArrowDown>
-        </h3>
+        <a href="#stack">
+          <h2 className="font-display text-xl md:text-2xl text-black">
+            Go to my <span className="text-primary">skills & stack</span>{" "}
+            <Arrow className="fill-current text-primary" size="20"></Arrow>
+          </h2>
+        </a>
+        <a href="#story">
+          <h3 className="font-display text-lg md:text-xl text-black mt-4 md:mt-10 animate-bounce">
+            Or go through my <span className="text-accent">story</span>
+            <ArrowDown
+              className="fill-current text-accent ml-2"
+              size="15"
+            ></ArrowDown>
+          </h3>
+        </a>
       </div>
     </div>
   );
