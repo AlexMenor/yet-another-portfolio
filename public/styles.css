@@ -1,3 +1,13 @@
 html {
 	scroll-behavior: smooth;
 }
+
+u {
+  text-decoration-color: #FFB800;
+  text-decoration-thickness: 4px;
+}
+
+a {
+	color: #3C87CD;
+	font-weight: bold;
+}

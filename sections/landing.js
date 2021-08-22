@@ -27,17 +27,18 @@ export default function Landing() {
         </header>
 
         <div className="flex flex-wrap-reverse flex-row items-center md:pt-20 lg:pt-40 2xl:pt-72 md:pb-20 justify-center md:px-20">
-          <h1
-            className="font-display text-4xl md:text-6xl leading-relaxed md:leading-relaxed mt-5 md:mt-0 xl:mr-20 underline"
-            style={{
-              textDecorationColor: "#FFB800",
-              textDecorationThickness: "4px",
-            }}
-          >
-            I'm a Full Stack
-            <br /> Developer
+          <h1 className="font-display text-3xl md:text-6xl leading-relaxed md:leading-relaxed mt-5 md:mt-0 xl:mr-20">
+            <u>
+              I'm a Full Stack
+              <br /> Developer
+            </u>
           </h1>
-          <Image src={me} alt="Picture of myself"></Image>
+          <img
+            src={me.src}
+            style={{ maxHeight: "40vh", zIndex: 1 }}
+            className="object-contain"
+            alt="Picture of myself"
+          ></img>
         </div>
       </div>
       <div className="flex flex-col items-center pb-10 md:pb-14 mt-10 relative">
