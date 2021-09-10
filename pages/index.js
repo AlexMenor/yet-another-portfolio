@@ -27,7 +27,7 @@ export default function Home() {
       <Stack></Stack>
       <footer className="flex items-center justify-center w-full bg-black h-20">
         <p className="mr-5 text-white">You can find me on:</p>
-        <Social showOnMobile={true}></Social>
+        <Social showOnMobile={true} colorClassName="text-white"></Social>
       </footer>
     </div>
   );

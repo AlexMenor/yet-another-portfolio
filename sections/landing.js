@@ -1,7 +1,5 @@
-import Image from "next/image";
-
 import me from "../public/assets/me.png";
-import blob from "../public/assets/blob.svg";
+import Div100vh from "react-div-100vh";
 
 import Arrow from "../components/Arrow";
 import ArrowDown from "../components/ArrowDown";
@@ -9,21 +7,11 @@ import Social from "../components/Social";
 
 export default function Landing() {
   return (
-    <div className="min-h-screen flex flex-col justify-between items-stretch relative">
-      <img
-        className="hidden xl:block"
-        style={{
-          position: "absolute",
-          right: 0,
-          width: "50vw",
-          height: "105vh",
-        }}
-        src={blob.src}
-      />
+    <Div100vh className="flex flex-col justify-between items-stretch relative">
       <div>
         <header className="px-7 py-7 md:px-14 md:py-7 flex justify-between">
           <h1 className="font-display text-2xl md:text-3xl">Alejandro Menor</h1>
-          <Social />
+          <Social colorClassName="text-black" />
         </header>
 
         <div className="flex flex-wrap-reverse flex-row items-center md:pt-20 lg:pt-40 2xl:pt-72 md:pb-20 justify-center md:px-20">
@@ -58,6 +46,6 @@ export default function Landing() {
           </h3>
         </a>
       </div>
-    </div>
+    </Div100vh>
   );
 }

@@ -1,20 +1,17 @@
-import gh from "../public/assets/github.svg";
-import ln from "../public/assets/linkedin.svg";
-import tw from "../public/assets/twitter.svg";
+import Github from "../public/assets/github.svg";
+import Linkedin from "../public/assets/linkedin.svg";
+import Twitter from "../public/assets/twitter.svg";
 
-export default function Social({ showOnMobile = false }) {
+export default function Social({ showOnMobile = false, className, colorClassName }) {
   return (
-    <div className={`space-x-5 ${showOnMobile ? "flex" : "hidden lg:flex"}`}>
+    <div className={`space-x-5 ${showOnMobile ? "flex" : "hidden lg:flex"} ${className}`}>
       <a
         href="https://github.com/AlexMenor"
         target="_blank"
         rel="noreferrer noopener"
       >
-        <img
-          className="relative z-10 fill-current"
-          src={gh.src}
-          height="30"
-          width="30"
+        <Github
+          className={`relative z-10 fill-current ${colorClassName}`}
         />
       </a>
       <a
@@ -22,11 +19,8 @@ export default function Social({ showOnMobile = false }) {
         target="_blank"
         rel="noreferrer noopener"
       >
-        <img
-          className="relative z-10 fill-current"
-          src={ln.src}
-          height="30"
-          width="30"
+        <Linkedin
+          className={`relative z-10 fill-current ${colorClassName}`}
         />
       </a>
       <a
@@ -34,11 +28,8 @@ export default function Social({ showOnMobile = false }) {
         target="_blank"
         rel="noreferrer noopener"
       >
-        <img
-          className="relative z-10 fill-current"
-          src={tw.src}
-          height="30"
-          width="30"
+        <Twitter
+          className={`relative z-10 fill-current ${colorClassName}`}
         />
       </a>
     </div>
