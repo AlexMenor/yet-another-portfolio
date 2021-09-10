@@ -1,13 +1,25 @@
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 u {
-  text-decoration-color: #FFB800;
+  text-decoration-color: #ffb800;
   text-decoration-thickness: 4px;
 }
 
 a {
-	color: #3C87CD;
-	font-weight: bold;
+  color: #3c87cd;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 900px) {
+  .landing-root {
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .landing-root {
+    margin-top: 25vh;
+  }
 }
