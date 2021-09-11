@@ -3,7 +3,7 @@ html {
 }
 
 u {
-  text-decoration-color: #ffb800;
+  text-decoration-color: #3c87cd;
   text-decoration-thickness: 4px;
 }
 
@@ -12,14 +12,109 @@ a {
   font-weight: bold;
 }
 
-@media screen and (min-width: 900px) {
-  .landing-root {
-    margin-top: 10vh;
+/* Top waves */
+.custom-shape-divider-bottom-1631354411 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1631354411 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 200px;
+}
+
+@media screen and (max-width: 900px) {
+  .custom-shape-divider-bottom-1631354411 svg {
+    height: 80px;
   }
 }
 
-@media screen and (min-width: 1080px) {
-  .landing-root {
-    margin-top: 25vh;
+.custom-shape-divider-bottom-1631354411 .shape-fill {
+  fill: #f1f7f8;
+}
+
+/* Bottom waves */
+@media screen and (min-width: 900px) {
+  .custom-shape-divider-bottom-1631355392 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-bottom-1631355392 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+  }
+
+  .custom-shape-divider-bottom-1631355392 .shape-fill {
+    fill: #2b2118;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .custom-shape-divider-bottom-1631356239 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-bottom-1631356239 svg {
+    position: relative;
+    display: block;
+    width: calc(169% + 1.3px);
+    height: 83px;
+  }
+
+  .custom-shape-divider-bottom-1631356239 .shape-fill {
+    fill: #2b2118;
+  }
+
+  /** For tablet devices **/
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1631356239 svg {
+      width: calc(169% + 1.3px);
+      height: 129px;
+    }
+  }
+
+  /** For mobile devices **/
+  @media (max-width: 767px) {
+    .custom-shape-divider-bottom-1631356239 svg {
+      width: calc(167% + 1.3px);
+      height: 100px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .landing-img {
+    max-height: 25vh;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 1280px) {
+  .landing-img {
+    max-height: 30vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .landing-img {
+    max-height: 40vh;
   }
 }

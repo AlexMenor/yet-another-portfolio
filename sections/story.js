@@ -48,7 +48,7 @@ export default function Story() {
   ];
   return (
     <div
-      className="mt-8 pt-8 mb-8 lg:mt-16 lg:pt-16 lg:mb-16 flex flex-col space-y-12 lg:space-y-16"
+      className="pt-16 mb-8 lg:pt-32 lg:mb-16 flex flex-col space-y-12 lg:space-y-16"
       id="story"
     >
       {items.map((item) => (
