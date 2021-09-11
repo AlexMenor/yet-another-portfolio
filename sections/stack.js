@@ -39,7 +39,7 @@ export default function Stack() {
   ];
   return (
     <div
-      className="container mx-auto lg:px-12 xl:px-52 px-5 md:px-8 mt-8 pt-8 mb-24 lg:mt-16 lg:pt-16 lg:mb-32"
+      className="container mx-auto lg:px-12 xl:px-32 2xl:px-52 px-5 md:px-8 mt-8 pt-8 mb-24 lg:mt-16 lg:pt-16 lg:mb-32"
       id="stack"
     >
       <h1 className="font-display text-2xl md:text-3xl lg:text-4xl">

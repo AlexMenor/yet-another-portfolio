@@ -9,26 +9,24 @@ import Social from "../components/Social";
 export default function Landing() {
   return (
     <Div100vh className="flex flex-col justify-between items-stretch relative bg-black">
-      <div>
-        <header className="px-7 py-7 md:px-14 md:py-7 flex justify-between">
-          <h1 className="font-display text-xl sm:text-2xl md:text-3xl text-white">
-            Alejandro Menor
+      <header className="px-7 pt-7 md:px-14 flex justify-between">
+        <h1 className="font-display text-xl sm:text-2xl md:text-3xl text-white">
+          Alejandro Menor
+        </h1>
+        <Social colorClassName="text-white" />
+      </header>
+      <div className="2xl:w-3/4 flex flex-col-reverse lg:flex-row items-center justify-center mx-auto lg:space-x-20 xl:space-x-28 landing-content">
+        <div className="font-display text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-white mt-8 sm:mt-14 lg:mt-0">
+          <h1>
+            <u>I'm a Full Stack</u>
           </h1>
-          <Social colorClassName="text-white" />
-        </header>
-        <div className="2xl:w-3/4 flex flex-col-reverse lg:flex-row items-center justify-center mx-auto pt-16 md:pt-16 lg:pt-60 xl:pt-36 2xl:pt-44 lg:space-x-20 xl:space-x-28 landing-content">
-          <div className="font-display text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-white mt-8 sm:mt-14 lg:mt-0">
-            <h1>
-              <u>I'm a Full Stack</u>
-            </h1>
-            <h1 className="mt-2 sm:mt-6">
-              <u>Developer</u>
-            </h1>
-          </div>
-          <img className="landing-img" src={me.src}></img>
+          <h1 className="mt-2 sm:mt-6">
+            <u>Developer</u>
+          </h1>
         </div>
+        <img className="landing-img" src={me.src}></img>
       </div>
-      <div className="flex flex-col items-center pb-16 md:pb-14 mt-10 relative z-10">
+      <div className="flex flex-col items-center pb-16 md:pb-14 relative z-10">
         <a href="#stack">
           <h2 className="font-display text-lg sm:text-xl md:text-2xl text-white">
             Go to my <span className="text-primary">skills & stack</span>{" "}

@@ -107,12 +107,6 @@ a {
   }
 }
 
-@media (max-height: 667px) {
-  .landing-content {
-    padding-top: 10px;
-  }
-}
-
 @media (min-width: 375px) and (max-width: 1280px) {
   .landing-img {
     max-height: 30vh;

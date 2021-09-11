@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function YearSummary({ year, title, picture, paragraph }) {
   return (
-    <div className="container mx-auto px-5 md:px-8 lg:px-12 xl:px-52">
+    <div className="container mx-auto px-5 md:px-8 lg:px-12 xl:px-32 2xl:px-52">
       <p className="font-display">{year}</p>
       <h2
         className="font-display text-xl lg:text-2xl"
