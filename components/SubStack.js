@@ -13,9 +13,9 @@ export default function SubStack({
       } mt-10`}
     >
       <div className="flex-1">
-        <h2 className={`text-xl md:text-3xl font-display mb-5`}>{name}</h2>
+        <h2 className={`text-xl lg:text-2xl font-display mb-5`}>{name}</h2>
         <p
-          className="md:text-xl text-justify"
+          className="lg:text-lg text-justify"
           dangerouslySetInnerHTML={{ __html: description }}
         />
       </div>
@@ -27,13 +27,13 @@ export default function SubStack({
         <Image className="w-full" src={picture} />
       </div>
       <style jsx>{`
+        .stack-blobs {
+          max-width: 70%;
+        }
         @media (min-width: 768px) {
           .stack-blobs {
             max-width: 30%;
           }
-        }
-        .stack-blobs {
-          max-width: 90%;
         }
       `}</style>
     </div>

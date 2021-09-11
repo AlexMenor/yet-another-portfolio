@@ -42,8 +42,10 @@ export default function Stack() {
       className="container mx-auto lg:px-12 xl:px-52 px-5 md:px-8 mt-8 pt-8 mb-24 lg:mt-16 lg:pt-16 lg:mb-32"
       id="stack"
     >
-      <h1 className="font-display text-3xl md:text-5xl">My Stack</h1>
-      <p className="md:text-xl my-5 md:my-10 text-justify">
+      <h1 className="font-display text-2xl md:text-3xl lg:text-4xl">
+        My Stack
+      </h1>
+      <p className="lg:text-lg my-5 md:my-10 text-justify">
         I've always tried to be stack agnostic and spend more time learning
         about fundamentals and patterns that make great applications.
         <br />

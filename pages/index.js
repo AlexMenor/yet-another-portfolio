@@ -26,7 +26,9 @@ export default function Home() {
       <Story></Story>
       <Stack></Stack>
       <footer className="flex items-end pb-3 justify-center lg:pb-8 w-full relative">
-        <p className="mr-5 text-white relative z-10">You can find me on:</p>
+        <p className="mr-5 text-white relative z-10 text-sm md:text-base">
+          You can find me on:
+        </p>
         <Social showOnMobile={true} colorClassName="text-white"></Social>
         <div className="custom-shape-divider-bottom-1631355392">
           <svg

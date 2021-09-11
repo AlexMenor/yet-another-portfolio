@@ -16,7 +16,7 @@ export default function Landing() {
           </h1>
           <Social colorClassName="text-white" />
         </header>
-        <div className="2xl:w-3/4 flex flex-col-reverse lg:flex-row items-center justify-center mx-auto md:pt-16 lg:pt-36 2xl:pt-44 lg:space-x-20 xl:space-x-28">
+        <div className="2xl:w-3/4 flex flex-col-reverse lg:flex-row items-center justify-center mx-auto pt-16 md:pt-16 lg:pt-60 xl:pt-36 2xl:pt-44 lg:space-x-20 xl:space-x-28 landing-content">
           <div className="font-display text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-white mt-8 sm:mt-14 lg:mt-0">
             <h1>
               <u>I'm a Full Stack</u>
