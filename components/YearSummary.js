@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function YearSummary({ year, title, picture, paragraph, icon }) {
   return (
-    <div className="container mx-auto px-5 md:px-8 lg:px-12 xl:px-32 2xl:px-52">
+    <div
+      className="container mx-auto px-5 md:px-8 lg:px-12 xl:px-32 2xl:px-52"
+      data-aos="fade-up"
+    >
       <div className="flex justify-between items-center">
         <div>
           <p className="font-display">{year}</p>

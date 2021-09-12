@@ -5,7 +5,14 @@ import Stack from "../sections/stack";
 import Social from "../components/Social";
 import metaImage from "../public/meta-image.png";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export default function Home() {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
     <div className="bg-white">
       <Head>
