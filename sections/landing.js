@@ -16,16 +16,19 @@ export default function Landing() {
         <Social />
       </header>
       <div className="2xl:w-3/4 flex flex-col-reverse lg:flex-row items-center justify-center mx-auto lg:space-x-20 xl:space-x-28 landing-content lg:px-20">
-        <div className="font-display text-white mt-8 sm:mt-14 lg:mt-0 w-9/12 md:w-max text-center md:text-left">
+        <div className="font-display text-white mt-8 sm:mt-14 lg:mt-0">
           <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-            I'm a <u>Full Stack Developer</u>
+            I'm a{" "}
+            <u>
+              Full Stack <br /> Developer
+            </u>
           </h1>
           <p
             className="text-lg md:text-xl lg:text-2xl xl:text-3xl mt-4 sm:mt-6"
             style={{ lineHeight: 1.4 }}
           >
-            that loves to work on <span className="text-accent">impactful</span>{" "}
-            projects
+            that loves to work on <br />
+            <span className="text-accent">impactful</span> projects
           </p>
         </div>
         <img className="landing-img" src={me.src}></img>
