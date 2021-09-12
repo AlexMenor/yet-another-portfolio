@@ -9,14 +9,14 @@ import Social from "../components/Social";
 export default function Landing() {
   return (
     <Div100vh className="flex flex-col justify-between items-stretch relative bg-black">
-      <header className="px-7 pt-7 md:px-14 flex justify-between">
-        <h1 className="font-display text-xl sm:text-2xl md:text-3xl text-white">
+      <header className="px-5 pt-5 md:pt-7 md:px-14 flex justify-between">
+        <h1 className="font-display text-xl sm:text-2xl lg:text-3xl text-white">
           Alejandro Menor
         </h1>
-        <Social colorClassName="text-white" />
+        <Social />
       </header>
       <div className="2xl:w-3/4 flex flex-col-reverse lg:flex-row items-center justify-center mx-auto lg:space-x-20 xl:space-x-28 landing-content">
-        <div className="font-display text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-white mt-8 sm:mt-14 lg:mt-0">
+        <div className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mt-8 sm:mt-14 lg:mt-0">
           <h1>
             <u>I'm a Full Stack</u>
           </h1>
@@ -26,15 +26,15 @@ export default function Landing() {
         </div>
         <img className="landing-img" src={me.src}></img>
       </div>
-      <div className="flex flex-col items-center pb-16 md:pb-14 relative z-10">
+      <div className="flex flex-col items-center pb-20 md:pb-14 relative z-10 bottom-landing-links">
         <a href="#stack">
-          <h2 className="font-display text-lg sm:text-xl md:text-2xl text-white">
+          <h2 className="font-display text-lg sm:text-xl lg:text-2xl text-white">
             Go to my <span className="text-primary">skills & stack</span>{" "}
             <Arrow className="fill-current text-primary" size="20"></Arrow>
           </h2>
         </a>
         <a href="#story">
-          <h3 className="font-display sm:text-lg md:text-xl text-white mt-4 md:mt-10 animate-bounce">
+          <h3 className="font-display sm:text-lg lg:text-xl text-white mt-4 md:mt-10 animate-bounce">
             Or go through my <span className="text-accent">story</span>
             <ArrowDown
               className="fill-current text-accent ml-2"

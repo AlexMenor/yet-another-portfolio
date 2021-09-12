@@ -27,12 +27,27 @@ a {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 200px;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 767px) {
   .custom-shape-divider-bottom-1631354411 svg {
-    height: 80px;
+    height: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .custom-shape-divider-bottom-1631354411 svg {
+    height: 70px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-shape-divider-bottom-1631354411 svg {
+    height: 100px;
+  }
+}
+@media (min-width: 1536px) {
+  .custom-shape-divider-bottom-1631354411 svg {
+    height: 130px;
   }
 }
 
@@ -116,5 +131,11 @@ a {
 @media (min-width: 1280px) {
   .landing-img {
     max-height: 40vh;
+  }
+}
+
+@media (max-height: 667px) {
+  .bottom-landing-links {
+    padding-bottom: 3rem;
   }
 }
