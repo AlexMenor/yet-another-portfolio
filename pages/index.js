@@ -20,7 +20,7 @@ export default function Home() {
         <meta name="title" content="Alejandro Menor" />
         <meta
           name="description"
-          content="I'm a Full Stack Developer from Spain that likes to work on impactful projects"
+          content="I'm a Full Stack Developer from Spain that loves to work on impactful projects"
         />
 
         <meta property="og:type" content="website" />
@@ -28,7 +28,7 @@ export default function Home() {
         <meta property="og:title" content="Alejandro Menor" />
         <meta
           property="og:description"
-          content="I'm a Full Stack Developer from Spain that likes to work on impactful projects"
+          content="I'm a Full Stack Developer from Spain that loves to work on impactful projects"
         />
         <meta property="og:image" content={metaImage.src} />
 
@@ -37,7 +37,7 @@ export default function Home() {
         <meta property="twitter:title" content="Alejandro Menor" />
         <meta
           property="twitter:description"
-          content="I'm a Full Stack Developer from Spain that likes to work on impactful projects"
+          content="I'm a Full Stack Developer from Spain that loves to work on impactful projects"
         />
         <meta property="twitter:image" content={metaImage.src} />
 

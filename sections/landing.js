@@ -16,7 +16,7 @@ export default function Landing() {
         <Social />
       </header>
       <div className="2xl:w-3/4 flex flex-col-reverse lg:flex-row items-center justify-center mx-auto lg:space-x-20 xl:space-x-28 landing-content lg:px-20">
-        <div className="font-display text-white mt-8 sm:mt-14 lg:mt-0">
+        <div className="font-display text-white mt-8 sm:mt-14 lg:mt-0 tracking-wide">
           <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
             I'm a{" "}
             <u>
@@ -35,13 +35,13 @@ export default function Landing() {
       </div>
       <div className="flex flex-col items-center pb-20 md:pb-14 relative z-10 bottom-landing-links">
         <a href="#stack">
-          <h2 className="font-display text-lg sm:text-xl lg:text-2xl text-white">
+          <h2 className="font-display sm:text-xl lg:text-2xl text-white">
             Go to my <span className="text-primary">skills & stack</span>{" "}
             <Arrow className="fill-current text-primary" size="20"></Arrow>
           </h2>
         </a>
         <a href="#story">
-          <h3 className="font-display sm:text-lg lg:text-xl text-white mt-4 md:mt-10 animate-bounce">
+          <h3 className="font-display text-sm sm:text-lg lg:text-xl text-white mt-4 md:mt-10 animate-bounce">
             Or go through my <span className="text-accent">story</span>
             <ArrowDown
               className="fill-current text-accent ml-2"
