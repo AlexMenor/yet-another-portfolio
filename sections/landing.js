@@ -17,7 +17,7 @@ export default function Landing() {
       </header>
       <div className="2xl:w-3/4 flex flex-col-reverse lg:flex-row items-center justify-center mx-auto lg:space-x-20 xl:space-x-28 landing-content lg:px-20">
         <div className="font-display text-white mt-8 sm:mt-14 lg:mt-0 tracking-wide">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl" style={{lineHeight: 1.25}}>
             I'm a{" "}
             <u>
               Full Stack <br /> Developer
