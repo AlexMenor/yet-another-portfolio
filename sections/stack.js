@@ -59,7 +59,7 @@ export default function Stack() {
       </p>
       <div className="space-y-12">
         {subStacks.map((s, i) => (
-          <SubStack {...s} inverse={i % 2 != 0}></SubStack>
+          <SubStack {...s} inverse={i % 2 != 0} key={i}></SubStack>
         ))}
       </div>
     </div>

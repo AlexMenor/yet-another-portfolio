@@ -63,7 +63,7 @@ export default function Story() {
       id="story"
     >
       {items.map((item) => (
-        <YearSummary {...item}></YearSummary>
+        <YearSummary {...item} key={item.year}></YearSummary>
       ))}
     </div>
   );
