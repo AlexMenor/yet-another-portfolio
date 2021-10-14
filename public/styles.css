@@ -57,6 +57,9 @@ a {
 
 /* Bottom waves */
 @media screen and (min-width: 900px) {
+  .custom-shape-divider-bottom-1631356239 {
+    display: none;
+  }
   .custom-shape-divider-bottom-1631355392 {
     position: absolute;
     bottom: 0;
@@ -79,6 +82,9 @@ a {
 }
 
 @media screen and (max-width: 900px) {
+  .custom-shape-divider-bottom-1631355392 {
+    display: none;
+  }
   .custom-shape-divider-bottom-1631356239 {
     position: absolute;
     bottom: 0;
