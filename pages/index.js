@@ -22,6 +22,8 @@ export default function Home() {
           name="description"
           content="I'm a Full Stack Developer from Spain that loves to work on impactful projects"
         />
+        <meta name="theme-color" content="#0a1723" />
+
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.alexmenor.es/" />
