@@ -16,6 +16,7 @@ export default function Home() {
   return (
     <div className="bg-white">
       <Head>
+        <html lang="en"/>
         <title>Alejandro Menor</title>
         <meta name="title" content="Alejandro Menor" />
         <meta
