@@ -8,8 +8,8 @@ export default function Posts({ posts }) {
   return (
     <>
       <Head>
-        <title>My most recent posts | Alejandro Menor</title>
-        <meta name="title" content="My most recent posts | Alejandro Menor" />
+        <title>My most recent posts</title>
+        <meta name="title" content="My most recent posts" />
         <meta
           name="description"
           content="I believe writing is a powerful tool to clarify thoughts and lessons"
@@ -17,10 +17,7 @@ export default function Posts({ posts }) {
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.alexmenor.es/posts" />
-        <meta
-          property="og:title"
-          content="My most recent posts | Alejandro Menor"
-        />
+        <meta property="og:title" content="My most recent posts" />
         <meta
           property="og:description"
           content="I believe writing is a powerful tool to clarify thoughts and lessons"
@@ -29,10 +26,7 @@ export default function Posts({ posts }) {
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.alexmenor.es/posts" />
-        <meta
-          property="twitter:title"
-          content="My most recent posts | Alejandro Menor"
-        />
+        <meta property="twitter:title" content="My most recent posts" />
         <meta
           property="twitter:description"
           content="I believe writing is a powerful tool to clarify thoughts and lessons"

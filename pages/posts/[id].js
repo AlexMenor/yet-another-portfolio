@@ -14,8 +14,8 @@ export default function Post({ post }) {
   return (
     <>
       <Head>
-        <title>{post.title} | Alejandro Menor</title>
-        <meta name="title" content={`${post.title} | Alejandro Menor`} />
+        <title>{post.title}</title>
+        <meta name="title" content={post.title} />
         <meta name="description" content={post.description} />
 
         <meta property="og:type" content="website" />
@@ -23,7 +23,7 @@ export default function Post({ post }) {
           property="og:url"
           content={`https://www.alexmenor.es/posts/${post.id}`}
         />
-        <meta property="og:title" content={`${post.title} | Alejandro Menor`} />
+        <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.description} />
         <meta property="og:image" content={post.coverImage} />
 
@@ -32,10 +32,7 @@ export default function Post({ post }) {
           property="twitter:url"
           content={`https://www.alexmenor.es/posts/${post.id}`}
         />
-        <meta
-          property="twitter:title"
-          content={`${post.title} | Alejandro Menor`}
-        />
+        <meta property="twitter:title" content={post.title} />
         <meta property="twitter:description" content={post.description} />
         <meta property="twitter:image" content={post.coverImage} />
       </Head>
