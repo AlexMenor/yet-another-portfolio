@@ -1,24 +1,22 @@
-import Div100vh from "react-div-100vh";
+import Div100vh from 'react-div-100vh';
 
-import me from "../public/assets/me.png";
+import me from '../public/assets/me.png';
 
-import Arrow from "../components/Arrow";
-import ArrowDown from "../components/ArrowDown";
-import Social from "../components/Social";
+import Arrow from '../components/Arrow';
+import ArrowDown from '../components/ArrowDown';
+import Header from '../components/Header';
 
 export default function Landing() {
   return (
     <Div100vh className="flex flex-col justify-between items-stretch relative bg-black">
-      <header className="px-5 pt-5 md:pt-7 md:px-14 flex justify-between">
-        <h1 className="font-display text-xl sm:text-2xl lg:text-3xl text-white">
-          Alejandro Menor
-        </h1>
-        <Social />
-      </header>
+      <Header />
       <div className="2xl:w-3/4 flex flex-col-reverse lg:flex-row items-center justify-center mx-auto lg:space-x-20 xl:space-x-28 landing-content lg:px-20">
         <div className="font-display text-white mt-8 sm:mt-14 lg:mt-0 tracking-wide">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl" style={{lineHeight: 1.25}}>
-            I'm a{" "}
+          <h1
+            className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+            style={{ lineHeight: 1.25 }}
+          >
+            I&apos;m a{' '}
             <u>
               Full Stack <br /> Developer
             </u>
@@ -36,7 +34,7 @@ export default function Landing() {
       <div className="flex flex-col items-center pb-20 md:pb-14 relative z-10 bottom-landing-links">
         <a href="#stack">
           <h2 className="font-display sm:text-xl lg:text-2xl text-white">
-            Go to my <span className="text-primary">skills & stack</span>{" "}
+            Go to my <span className="text-primary">skills & stack</span>{' '}
             <Arrow className="fill-current text-primary" size="20"></Arrow>
           </h2>
         </a>

@@ -1,30 +1,27 @@
-import Head from "next/head";
-import Landing from "../sections/landing";
-import Story from "../sections/story";
-import Stack from "../sections/stack";
-import Social from "../components/Social";
-import metaImage from "../public/meta-image.png";
+import Head from 'next/head';
+import Landing from '../sections/landing';
+import Story from '../sections/story';
+import Stack from '../sections/stack';
+import Social from '../components/Social';
+import metaImage from '../public/meta-image.png';
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export default function Home() {
   useEffect(() => {
     AOS.init({ once: true });
   }, []);
   return (
-    <div className="bg-white">
+    <div>
       <Head>
-        <html lang="en"/>
         <title>Alejandro Menor</title>
         <meta name="title" content="Alejandro Menor" />
         <meta
           name="description"
           content="I'm a Full Stack Developer from Spain that loves to work on impactful projects"
         />
-        <meta name="theme-color" content="#0a1723" />
-
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.alexmenor.es/" />
@@ -43,39 +40,6 @@ export default function Home() {
           content="I'm a Full Stack Developer from Spain that loves to work on impactful projects"
         />
         <meta property="twitter:image" content={metaImage.src} />
-
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        ></link>
-
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        ></link>
-
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        ></link>
-
-        <link rel="manifest" href="/site.webmanifest"></link>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Martel:wght@900&display=swap"
-          rel="stylesheet"
-        />
       </Head>
 
       <Landing></Landing>
