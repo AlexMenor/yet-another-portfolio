@@ -8,8 +8,8 @@ export default function Posts({ posts }) {
   return (
     <>
       <Head>
-        <title>My most recent posts</title>
-        <meta name="title" content="My most recent posts" />
+        <title>My most recent posts | Alejandro Menor</title>
+        <meta name="title" content="My most recent posts | Alejandro Menor" />
         <meta
           name="description"
           content="I believe writing is a powerful tool to clarify thoughts and lessons"
