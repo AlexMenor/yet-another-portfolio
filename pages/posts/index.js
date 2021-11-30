@@ -1,6 +1,6 @@
 import Header from '../../components/Header';
 import PostItem from '../../components/PostItem';
-import { GetAllPosts } from './service';
+import { GetAllPosts } from '../../services/post';
 import Head from 'next/head';
 import metaImage from '../../public/meta-image.png';
 
@@ -16,7 +16,7 @@ export default function Posts({ posts }) {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.alexmenor.es/" />
+        <meta property="og:url" content="https://www.alexmenor.es/posts" />
         <meta
           property="og:title"
           content="My most recent posts | Alejandro Menor"
@@ -28,7 +28,7 @@ export default function Posts({ posts }) {
         <meta property="og:image" content={metaImage.src} />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.alexmenor.es/" />
+        <meta property="twitter:url" content="https://www.alexmenor.es/posts" />
         <meta
           property="twitter:title"
           content="My most recent posts | Alejandro Menor"

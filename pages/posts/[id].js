@@ -1,6 +1,6 @@
 import Header from '../../components/Header';
 import Head from 'next/head';
-import { GetAllPosts, GetPost } from './service';
+import { GetAllPosts, GetPost } from '../../services/post';
 
 export default function Post({ post }) {
   const date = new Date(post.publishedAt);
