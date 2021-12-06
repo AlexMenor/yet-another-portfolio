@@ -43,8 +43,9 @@ export default function Post({ post }) {
           <h1 className="font-display text-xl md:text-2xl lg:text-3xl">
             {post.title}
           </h1>
-          <div className="rounded mt-6">
+          <div className="mt-6">
             <Image
+              className="rounded"
               width={1000}
               height={420}
               layout="responsive"

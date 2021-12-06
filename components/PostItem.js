@@ -15,9 +15,10 @@ export default function PostItem({
           {readingTimeMinutes} min read
         </p>
         <h2 className="font-display text-lg lg:text-2xl mt-2">{title}</h2>
-        <div className="rounded mt-2">
+        <div className="mt-2">
           <Image
             layout="responsive"
+            className="rounded"
             width={1000}
             height={420}
             src={coverImage}
