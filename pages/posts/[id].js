@@ -1,5 +1,6 @@
 import Header from '../../components/Header';
 import Head from 'next/head';
+import Image from 'next/image';
 import { GetAllPosts, GetPost } from '../../services/post';
 
 export default function Post({ post }) {
@@ -42,11 +43,17 @@ export default function Post({ post }) {
           <h1 className="font-display text-xl md:text-2xl lg:text-3xl">
             {post.title}
           </h1>
-          <img
-            className="rounded mt-6"
-            src={post.coverImage}
-            alt="Post cover image"
-          />
+          <div className="rounded mt-6">
+            <Image
+              width={1000}
+              height={420}
+              layout="responsive"
+              src={post.coverImage}
+              placeholder="blur"
+              blurDataURL={post.blurCoverImage}
+              alt="Post cover image"
+            />
+          </div>
           <div className="flex items-center space-x-2 mt-2 text-gray-500">
             <p className="text-xs tracking-wide">Published on {readableDate}</p>
             <p>•</p>

@@ -1,3 +1,5 @@
+import { getPlaiceholder } from 'plaiceholder';
+
 export async function GetAllPosts() {
   const body = await fetch('https://dev.to/api/articles/me', {
     headers: {
@@ -5,25 +7,21 @@ export async function GetAllPosts() {
     },
   }).then((res) => res.json());
 
-  const posts = body.map(
-    ({
-      title,
-      cover_image: coverImage,
-      published_at: publishedAt,
-      reading_time_minutes: readingTimeMinutes,
-      slug,
-      tag_list: tags,
-      id,
-    }) => ({
-      title,
-      coverImage,
-      publishedAt,
-      readingTimeMinutes,
-      slug,
-      tags,
-      id,
-    })
-  );
+  const posts = [];
+
+  for (const post of body) {
+    posts.push({
+      title: post.title,
+      coverImage: post.cover_image,
+      pusblishedAt: post.published_at,
+      readingTimeMinutes: post.reading_time_minutes,
+      slug: post.slug,
+      tags: post.tag_list,
+      id: post.id,
+      blurCoverImage: (await getPlaiceholder(post.cover_image)).base64,
+    });
+  }
+
   return posts;
 }
 
@@ -41,6 +39,9 @@ export async function GetPost(id) {
       'api-key': process.env.DEV_TO_API_KEY,
     },
   }).then((res) => res.json());
+
+  const { base64 } = await getPlaiceholder(coverImage);
+
   return {
     title,
     coverImage,
@@ -49,5 +50,6 @@ export async function GetPost(id) {
     html,
     readingTimeMinutes,
     description,
+    blurCoverImage: base64,
   };
 }

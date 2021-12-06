@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function PostItem({
   title,
   coverImage,
   readingTimeMinutes,
   id,
+  blurCoverImage,
 }) {
   return (
     <Link href={`/posts/${id}`} passHref>
@@ -13,7 +15,17 @@ export default function PostItem({
           {readingTimeMinutes} min read
         </p>
         <h2 className="font-display text-lg lg:text-2xl mt-2">{title}</h2>
-        <img className="rounded mt-2" src={coverImage} alt="Post cover image" />
+        <div className="rounded mt-2">
+          <Image
+            layout="responsive"
+            width={1000}
+            height={420}
+            src={coverImage}
+            alt="Post cover image"
+            blurDataURL={blurCoverImage}
+            placeholder="blur"
+          />
+        </div>
       </div>
     </Link>
   );
