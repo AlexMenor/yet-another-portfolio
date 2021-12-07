@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function YearSummary({ year, title, picture, paragraph, icon }) {
   return (
@@ -14,11 +14,11 @@ export default function YearSummary({ year, title, picture, paragraph, icon }) {
             dangerouslySetInnerHTML={{ __html: title }}
           />
         </div>
-        <img src={icon.src} style={{ height: "100px", width: "auto" }}></img>
+        <img src={icon.src} style={{ height: '100px', width: 'auto' }}></img>
       </div>
       <div className="flex flex-col lg:flex-row items-center mt-5">
         <div className="flex-1">
-          <Image className="rounded w-full" src={picture} />
+          <Image className="rounded w-full" src={picture} placeholder="blur" />
         </div>
         <p
           className="mt-10 lg:mt-0 lg:ml-10 lg:text-lg flex-1 text-justify"
