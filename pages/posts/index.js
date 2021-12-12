@@ -1,4 +1,3 @@
-import Header from '../../components/Header';
 import PostItem from '../../components/PostItem';
 import { GetAllPosts } from '../../services/post';
 import Head from 'next/head';
@@ -33,8 +32,7 @@ export default function Posts({ posts }) {
         />
         <meta property="twitter:image" content={metaImage.src} />
       </Head>
-      <div className="min-h-screen">
-        <Header mode="light" />
+      <div className="min-h-screen pt-10 md:pt-14 lg:pt-20">
         <div className="container mx-auto px-5 md:px-8 lg:px-12 xl:px-32 2xl:px-52">
           <h1 className="mt-16 lg:mt-24 font-display text-xl md:text-2xl lg:text-4xl">
             My most recent posts

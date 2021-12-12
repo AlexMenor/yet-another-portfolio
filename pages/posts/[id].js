@@ -1,4 +1,3 @@
-import Header from '../../components/Header';
 import Head from 'next/head';
 import Image from 'next/image';
 import { GetAllPosts, GetPost } from '../../services/post';
@@ -37,8 +36,7 @@ export default function Post({ post }) {
         <meta property="twitter:description" content={post.description} />
         <meta property="twitter:image" content={post.coverImage} />
       </Head>
-      <div className="min-h-screen">
-        <Header mode="light" />
+      <div className="min-h-screen pt-10 md:pt-14 lg:pt-20">
         <div className="container mx-auto px-5 md:px-8 lg:px-12 xl:px-32 2xl:px-52 mt-16 lg:mt-24">
           <h1 className="font-display text-xl md:text-2xl lg:text-3xl">
             {post.title}
