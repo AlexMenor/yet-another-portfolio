@@ -206,3 +206,12 @@ blockquote::before {
 blockquote::after {
   content: '';
 }
+
+article pre,
+article img {
+  border-radius: 0.25rem;
+}
+
+article img {
+  max-height: 50vh;
+}

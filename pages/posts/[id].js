@@ -1,6 +1,12 @@
+import { useEffect } from 'react';
+
 import Head from 'next/head';
 import Image from 'next/image';
 import { GetAllPosts, GetPost } from '../../services/post';
+
+import Prism from 'prismjs';
+import 'prismjs/themes/prism-tomorrow.css';
+import 'prismjs/components/prism-typescript';
 
 export default function Post({ post }) {
   const date = new Date(post.publishedAt);
@@ -10,6 +16,10 @@ export default function Post({ post }) {
     month: 'long',
     day: 'numeric',
   }).format(date);
+
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
 
   return (
     <>

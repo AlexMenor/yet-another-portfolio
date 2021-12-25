@@ -1,4 +1,5 @@
 import { getPlaiceholder } from 'plaiceholder';
+import markdownIt from 'markdown-it';
 
 export async function GetAllPosts() {
   const body = await fetch('https://dev.to/api/articles/me', {
@@ -31,7 +32,7 @@ export async function GetPost(id) {
     cover_image: coverImage,
     published_at: publishedAt,
     tags,
-    body_html: html,
+    body_markdown,
     reading_time_minutes: readingTimeMinutes,
     description,
   } = await fetch(`https://dev.to/api/articles/${id}`, {
@@ -41,6 +42,10 @@ export async function GetPost(id) {
   }).then((res) => res.json());
 
   const { base64 } = await getPlaiceholder(coverImage);
+
+  const markdownParser = markdownIt();
+
+  const html = markdownParser.render(body_markdown);
 
   return {
     title,
