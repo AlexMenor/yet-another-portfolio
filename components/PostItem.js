@@ -10,7 +10,10 @@ export default function PostItem({
 }) {
   return (
     <Link href={`/posts/${id}`} passHref>
-      <div className="py-2 cursor-pointer" data-aos="fade-up">
+      <div
+        className="py-2 cursor-pointer transform hover:scale-102 transition-transform ease-in-out"
+        data-aos="fade-up"
+      >
         <p className="uppercase text-xs tracking-widest text-gray-500">
           {readingTimeMinutes} min read
         </p>
