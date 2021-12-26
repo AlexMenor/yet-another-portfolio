@@ -7,7 +7,7 @@ import ArrowDown from '../components/ArrowDown';
 
 export default function Landing() {
   return (
-    <Div100vh className="flex flex-col justify-between items-stretch relative bg-black pt-24 md:pt-32 lg:pt-52">
+    <Div100vh className="flex flex-col justify-between items-stretch relative landing pt-24 md:pt-32 lg:pt-52">
       <div className="2xl:w-3/4 flex flex-col-reverse lg:flex-row items-center justify-center mx-auto lg:space-x-20 xl:space-x-28 lg:px-20">
         <div className="font-display text-white mt-8 sm:mt-14 lg:mt-0 tracking-wide">
           <h1
