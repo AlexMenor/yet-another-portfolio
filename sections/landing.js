@@ -24,7 +24,10 @@ export default function Landing() {
             style={{ lineHeight: 1.4 }}
           >
             that loves to work on <br />
-            <span className="text-accent">impactful</span> projects
+            <span className="text-transparent bg-gradient-to-r from-accent/70 to-accent bg-clip-text">
+              impactful
+            </span>{' '}
+            projects
           </p>
         </div>
         <img className="landing-img" src={me.src}></img>
