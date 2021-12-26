@@ -2,11 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-u {
-  text-decoration-color: #3c87cd;
-  text-decoration-thickness: 4px;
-}
-
 a {
   color: #3c87cd;
   font-weight: bold;

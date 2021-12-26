@@ -15,9 +15,9 @@ export default function Landing() {
             style={{ lineHeight: 1.25 }}
           >
             I&apos;m a{' '}
-            <u>
+            <span className="underline decoration-primary">
               Full Stack <br /> Developer
-            </u>
+            </span>
           </h1>
           <p
             className="text-lg md:text-xl lg:text-2xl xl:text-3xl mt-4 sm:mt-6"
