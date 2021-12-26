@@ -215,3 +215,13 @@ article img {
 article img {
   max-height: 50vh;
 }
+
+code:not([class])::before {
+  content: '`';
+}
+code:not([class])::after {
+  content: '`';
+}
+code:not([class]) {
+  color: #3c87cd;
+}
