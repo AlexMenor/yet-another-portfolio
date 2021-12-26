@@ -13,7 +13,7 @@ export default function Header({ mode = 'dark' }) {
         <Link href="/" passHref>
           <a>
             <h1
-              className={`font-display text-xl sm:text-2xl lg:text-3xl ${
+              className={`font-display text-lg sm:text-xl lg:text-2xl ${
                 mode === 'dark' ? 'text-white' : 'text-black'
               }`}
             >
@@ -23,7 +23,7 @@ export default function Header({ mode = 'dark' }) {
         </Link>
         <Link href="/posts" passHref>
           <a
-            className={`text-lg sm:text-xl lg:text-2xl ${
+            className={`sm:text-lg lg:text-xl ${
               mode === 'dark' ? 'text-white' : 'text-primary'
             }`}
           >
