@@ -1,6 +1,6 @@
 import Div100vh from 'react-div-100vh';
 
-import me from '../public/assets/me.png';
+import me from '../public/assets/avatar.png';
 
 import Arrow from '../components/Arrow';
 import ArrowDown from '../components/ArrowDown';
