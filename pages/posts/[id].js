@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 
-import Head from 'next/head';
 import Image from 'next/image';
 import { GetAllPosts, GetPost } from '../../services/post';
+
+import MetaWrapper from '../../components/MetaWrapper';
 
 import Prism from 'prismjs';
 import 'prismjs/themes/prism-tomorrow.css';
@@ -21,31 +22,15 @@ export default function Post({ post }) {
     Prism.highlightAll();
   }, []);
 
+  const meta = {
+    title: post.title,
+    description: post.description,
+    image: post.coverImage,
+    path: `/${post.id}`,
+  };
+
   return (
-    <>
-      <Head>
-        <title>{post.title}</title>
-        <meta name="title" content={post.title} />
-        <meta name="description" content={post.description} />
-
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content={`https://www.alexmenor.es/posts/${post.id}`}
-        />
-        <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post.description} />
-        <meta property="og:image" content={post.coverImage} />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content={`https://www.alexmenor.es/posts/${post.id}`}
-        />
-        <meta property="twitter:title" content={post.title} />
-        <meta property="twitter:description" content={post.description} />
-        <meta property="twitter:image" content={post.coverImage} />
-      </Head>
+    <MetaWrapper {...meta}>
       <div className="min-h-screen pt-10 md:pt-14 lg:pt-20 pb-14 md:pb-20 lg:pb-32">
         <div className="container mx-auto px-5 md:px-8 lg:px-12 xl:px-32 2xl:px-52 mt-16 lg:mt-24">
           <h1 className="font-display text-xl md:text-2xl lg:text-3xl">
@@ -76,7 +61,7 @@ export default function Post({ post }) {
           ></article>
         </div>
       </div>
-    </>
+    </MetaWrapper>
   );
 }
 

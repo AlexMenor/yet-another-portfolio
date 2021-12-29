@@ -1,41 +1,22 @@
 import PostItem from '../../components/PostItem';
 import { GetAllPosts } from '../../services/post';
 
-import Head from 'next/head';
 import Image from 'next/image';
 
 import metaImage from '../../public/meta-image.png';
 import writingPicture from '../../public/assets/writing.png';
+import MetaWrapper from '../../components/MetaWrapper';
 
 export default function Posts({ posts }) {
+  const meta = {
+    title: 'My most recent posts | Alejandro Menor',
+    description:
+      'I believe writing is a powerful tool to clarify thoughts and lessons',
+    image: metaImage.src,
+    path: '/posts',
+  };
   return (
-    <>
-      <Head>
-        <title>My most recent posts | Alejandro Menor</title>
-        <meta name="title" content="My most recent posts | Alejandro Menor" />
-        <meta
-          name="description"
-          content="I believe writing is a powerful tool to clarify thoughts and lessons"
-        />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.alexmenor.es/posts" />
-        <meta property="og:title" content="My most recent posts" />
-        <meta
-          property="og:description"
-          content="I believe writing is a powerful tool to clarify thoughts and lessons"
-        />
-        <meta property="og:image" content={metaImage.src} />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.alexmenor.es/posts" />
-        <meta property="twitter:title" content="My most recent posts" />
-        <meta
-          property="twitter:description"
-          content="I believe writing is a powerful tool to clarify thoughts and lessons"
-        />
-        <meta property="twitter:image" content={metaImage.src} />
-      </Head>
+    <MetaWrapper {...meta}>
       <div className="min-h-screen pt-10 md:pt-14 lg:pt-20 pb-14 md:pb-20 lg:pb-32">
         <div className="container mx-auto px-5 md:px-8 lg:px-12 xl:px-32 2xl:px-52">
           <div className="flex items-center justify-between mt-16 lg:mt-24">
@@ -63,7 +44,7 @@ export default function Posts({ posts }) {
           </div>
         </div>
       </div>
-    </>
+    </MetaWrapper>
   );
 }
 
