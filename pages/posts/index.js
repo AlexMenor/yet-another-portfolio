@@ -6,6 +6,7 @@ import Image from 'next/image';
 import metaImage from '../../public/meta-image.png';
 import writingPicture from '../../public/assets/writing.png';
 import MetaWrapper from '../../components/MetaWrapper';
+import Container from '../../components/Container';
 
 export default function Posts({ posts }) {
   const meta = {
@@ -17,8 +18,8 @@ export default function Posts({ posts }) {
   };
   return (
     <MetaWrapper {...meta}>
-      <div className="min-h-screen pt-10 md:pt-14 lg:pt-20 pb-14 md:pb-20 lg:pb-32">
-        <div className="container mx-auto px-5 md:px-8 lg:px-12 xl:px-32 2xl:px-52">
+      <div className="min-h-screen pt-10 md:pt-14 lg:pt-20 pb-14 md:pb-20">
+        <Container>
           <div className="flex items-center justify-between mt-16 lg:mt-24">
             <div>
               <h1 className="font-display text-xl md:text-2xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-secondary/80 to-secondary/90 bg-black">
@@ -42,7 +43,7 @@ export default function Posts({ posts }) {
               <PostItem key={post.id} {...post} />
             ))}
           </div>
-        </div>
+        </Container>
       </div>
     </MetaWrapper>
   );
