@@ -4,10 +4,10 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-black/90 to-black">
       <div className="footer-wave"></div>
-      <div className="w-full flex items-center justify-center py-8">
-        <p className="mr-5 text-white text-sm md:text-base">
-          You can find me on:
-        </p>
+      <div className="w-full flex items-center justify-center space-x-12 py-8">
+        <h1 className="font-display text-lg md:text-xl bg-gradient-to-r text-transparent bg-clip-text from-primary/80 to-primary">
+          Alejandro Menor
+        </h1>
         <Social />
       </div>
     </footer>
