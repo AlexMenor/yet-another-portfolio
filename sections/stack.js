@@ -39,7 +39,7 @@ export default function Stack() {
     },
   ];
   return (
-    <div data-aos="fade-up">
+    <div data-aos="fade-up" id="stack">
       <Container className="mt-8 pt-8 mb-24 lg:mt-16 lg:pt-16 lg:mb-32">
         <h1 className="font-display text-2xl md:text-3xl lg:text-4xl">
           My Stack
