@@ -10,7 +10,7 @@ export default function Posts({ posts }) {
   const meta = {
     title: 'My most recent posts | Alejandro Menor',
     description:
-      'I believe writing is a powerful tool to clarify thoughts and lessons',
+      'I believe that writing is a powerful tool to clarify thoughts and lessons',
     image: metaImage.src,
     path: '/posts',
   };
