@@ -32,7 +32,7 @@ export default function Post({ post }) {
 
   return (
     <MetaWrapper {...meta}>
-      <div className="min-h-screen pt-10 md:pt-14 lg:pt-20 pb-14 md:pb-20">
+      <div className="min-h-screen pt-10 md:pt-14 lg:pt-20">
         <Container className="mt-16 lg:mt-24">
           <h1 className="font-display text-xl md:text-2xl lg:text-3xl">
             {post.title}
