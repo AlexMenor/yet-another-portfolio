@@ -11,15 +11,10 @@ export default function PostItem({
   return (
     <div data-aos="fade-up">
       <Link href={`/posts/${id}`} passHref>
-        <div className="py-2 cursor-pointer transform hover:scale-102 transition-transform ease-in-out">
-          <p className="uppercase text-xs tracking-widest text-gray-500">
-            {readingTimeMinutes} min read
-          </p>
-          <h2 className="font-display text-lg lg:text-2xl mt-2">{title}</h2>
-          <div className="mt-2">
+        <div className="cursor-pointer transform hover:scale-102 transition-transform ease-in-out overflow-hidden rounded-lg">
+          <div>
             <Image
               layout="responsive"
-              className="rounded"
               width={1000}
               height={420}
               src={coverImage}
@@ -27,6 +22,12 @@ export default function PostItem({
               blurDataURL={blurCoverImage}
               placeholder="blur"
             />
+          </div>
+          <div className="p-6" style={{ backgroundColor: '#FFFFFF' }}>
+            <p className="uppercase text-xs tracking-widest text-gray-500">
+              {readingTimeMinutes} min read
+            </p>
+            <h2 className="font-display text-lg lg:text-xl mt-2">{title}</h2>
           </div>
         </div>
       </Link>

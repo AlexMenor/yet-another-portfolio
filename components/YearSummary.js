@@ -3,7 +3,7 @@ import Container from './Container';
 
 export default function YearSummary({ year, title, picture, paragraph, icon }) {
   return (
-    <div data-aos>
+    <div data-aos="fade-up">
       <Container>
         <div className="flex justify-between items-center">
           <div>
