@@ -18,7 +18,7 @@ export default function Posts({ posts }) {
     <MetaWrapper {...meta}>
       <div className="min-h-screen pt-10 md:pt-14 lg:pt-20 md:pb-14">
         <Container>
-          <PostsHero className="mt-16 lg:mt-24" />
+          <PostsHero className="mt-16" />
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
             {posts.map((post) => (
               <PostItem key={post.id} {...post} />
