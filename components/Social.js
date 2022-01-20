@@ -32,7 +32,9 @@ export default function Social({ className, mode = 'dark' }) {
           rel="noreferrer noopener"
           style={{ color: 'inherit' }}
         >
-          <link.icon className={`relative z-10 fill-current`} />
+          <link.icon
+            className={`relative z-10 fill-current transform hover:scale-110 active:scale-90 transition-transform`}
+          />
         </a>
       ))}
     </div>

@@ -15,13 +15,13 @@ module.exports = {
         white: '#F1F7F8',
         black: '#0a1723',
       },
+      scale: {
+        102: '1.02',
+      },
     },
     fontFamily: {
       display: ['Martel', 'system-ui', 'sans-serif'],
       sans: ['"Open Sans"', 'system-ui', 'sans-serif'],
-    },
-    scale: {
-      102: '1.02',
     },
   },
   variants: {
