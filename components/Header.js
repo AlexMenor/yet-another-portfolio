@@ -11,7 +11,7 @@ export default function Header({ mode = 'dark' }) {
         <Link href="/" passHref>
           <a>
             <h1
-              className={`font-display text-lg sm:text-xl lg:text-2xl ${
+              className={`transform hover:scale-105 active:scale-95 transition-transform font-display text-lg sm:text-xl lg:text-2xl ${
                 mode === 'dark' ? 'text-white' : 'text-black'
               }`}
             >
@@ -21,7 +21,7 @@ export default function Header({ mode = 'dark' }) {
         </Link>
         <Link href="/posts" passHref>
           <a
-            className={`sm:text-lg lg:text-xl ${
+            className={`transform hover:scale-110 active:scale-90 transition-transform sm:text-lg lg:text-xl ${
               mode === 'dark' ? 'text-white' : 'text-primary'
             }`}
           >
