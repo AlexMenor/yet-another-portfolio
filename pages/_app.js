@@ -12,7 +12,7 @@ import Footer from '../components/Footer';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    AOS.init({ once: true, offset: 70 });
+    AOS.init({ once: true, offset: 40 });
   }, []);
 
   const router = useRouter();
