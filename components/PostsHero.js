@@ -1,16 +1,4 @@
-import { useEffect, useRef } from 'react';
-
 export default function PostsHero({ className = '' }) {
-  const pathRef = useRef(null);
-  useEffect(() => {
-    const path = pathRef.current;
-    path.setAttribute('stroke-dasharray', path.getTotalLength());
-    path.setAttribute('stroke-dashoffset', path.getTotalLength());
-    setTimeout(() => {
-      path.style.opacity = 1;
-      path.setAttribute('stroke-dashoffset', 0);
-    }, 700);
-  }, []);
   return (
     <div
       data-aos="zoom-in"
@@ -21,28 +9,9 @@ export default function PostsHero({ className = '' }) {
         <span className="text-black">📝&nbsp;</span>My most recent posts
       </h1>
       <div className="w-fit mx-auto px-10 mt-5">
-        <p className="text-gray-600 text-lg font-light">
+        <p className="pb-1 inline text-gray-600 text-lg font-light fancy-underline-animation">
           Writing is a powerful tool to clarify thoughts and lessons
         </p>
-        <svg
-          className="pt-1"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0.5 0.5 303 5"
-        >
-          <path
-            className="stroke-primary fill-transparent opacity-0"
-            style={{
-              transitionProperty: 'stroke-dashoffset',
-              transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
-              transitionDuration: '500ms',
-            }}
-            ref={pathRef}
-            strokeLinecap="round"
-            strokeWidth="2"
-            d="M-2 3h309"
-          ></path>
-        </svg>
       </div>
     </div>
   );

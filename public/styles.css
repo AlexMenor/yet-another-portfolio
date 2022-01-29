@@ -3,6 +3,7 @@ html {
   --dark: rgb(10, 23, 35);
   --dark-rgb: 10, 23, 35;
   --primary: rgb(60, 135, 205);
+  --primary-rgb: 60, 135, 205;
   --light: rgb(241, 247, 248);
   --accent: rgb(159, 229, 191);
 }
@@ -199,4 +200,25 @@ code:not([class]) {
     width: 200%;
     transform: translateX(-25%);
   }
+}
+
+@keyframes expand-underline {
+  to {
+    background-size: 100% 3px;
+  }
+}
+
+.fancy-underline-animation {
+  text-decoration: none;
+  background-image: linear-gradient(
+    rgba(var(--primary-rgb), 0.9),
+    rgba(var(--primary-rgb), 0.9)
+  );
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 3px;
+  animation: expand-underline 500ms;
+  animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  animation-delay: 600ms;
+  animation-fill-mode: forwards;
 }
