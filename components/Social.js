@@ -9,7 +9,7 @@ export default function Social({ className, mode = 'dark' }) {
       icon: Github,
     },
     {
-      href: 'https://www.linkedin.com/in/alejandro-menor-molinero-a34595176',
+      href: 'https://www.linkedin.com/in/alejandro-menor-molinero',
       icon: Linkedin,
     },
     {
